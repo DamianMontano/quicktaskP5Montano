@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float speed = 5f;
 
     void Update()
     {
@@ -13,6 +13,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(horizontal, 0f, vertical);
 
-        transform.Translate(movement * moveSpeed * Time.deltaTime);
+        transform.Translate(movement * speed * Time.deltaTime);
     }
 }
